@@ -129,3 +129,58 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+heading {
+  display: block;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.sub-list {
+  list-style-type: "– ";
+  padding-left: 1.2em;
+}
+
+/* Stack the bio and publication rows on narrow screens */
+@media (max-width: 600px) {
+  .bio tr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bio td {
+    display: block;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 10px 20px !important;
+  }
+
+  .bio img {
+    display: block;
+    width: 60% !important;
+    max-width: 200px !important;
+    margin: 0 auto;
+  }
+
+  #publications tr > td {
+    display: block;
+    width: 100% !important;
+  }
+
+  #publications tr > td:first-child {
+    padding-bottom: 0 !important;
+  }
+
+  #publications .one {
+    width: auto;
+    height: auto;
+  }
+
+  #publications .one img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 200px;
+    margin: 0 auto;
+  }
+}
